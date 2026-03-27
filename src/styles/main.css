@@ -5,8 +5,13 @@
 }
 
 body{
-    background-image: url("../assets/References/WindowsXpReference.webp");
-    background-size: contain;
+
+    /* REFERENCE */
+    background-image: url("../assets/backgrounds/wallpaper-bliss-windowsxp.jpg");
+
+    /* WALLPAPER */
+    background-image: url("../assets/backgrounds/wallpaper-bliss-windowsxp.jpg");
+    background-size: cover;
 }
 
 .windowsxp{
@@ -23,30 +28,34 @@ body{
     bottom: 0px;
 
     .home-menu-container{
-        background-color: rgba(0, 0, 0, 0.313);
+        /* background-color: rgba(0, 0, 0, 0.313); */
         width: 477px;
-        height: 600px;
+        height: 606px;
         margin-bottom: auto ;
         position: absolute;
         bottom: 37px;
-        border-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border: solid #245298;
         /* display: none; */
 
         .home-menu-top-bar{
-            background-color: rgba(127, 255, 212, 0.291);
-            height: 78px;
+            /* background-color: rgba(127, 255, 212, 0.291); */
+            height: 80px;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
+            border-top: 3px solid rgba(255, 255, 255, 0.579);
         }
         .home-menu-mid-icons{
             height: 471px;
-            background-color: rgba(0, 255, 255, 0.309);
-            border: solid 2px;
+            /* background-color: rgba(0, 255, 255, 0.309); */
+            border: solid 2px #245298;
+            border-top: solid 3px #245298;        
         }
         .home-menu-bottom-bar{
-            background-color: rgba(250, 235, 215, 0.182);
+            /* background-color: rgba(250, 235, 215, 0.182); */
             height: 52px;
-            /* background: linear-gradient(#245298,#3974db); */
+            background: linear-gradient(#245298,#3974db);
         }
     }
 
