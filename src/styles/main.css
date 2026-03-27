@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../assets/References/WindowsXpReference.webp");
+    background-size: contain;
+}
+
+.windowsxp{
+    width: 100vw;
+    height: 100vh;
+}
+
+.windowsxp-menu{
+    width: 100vw;
+    height: 37px;
+    background-color: rgba(0, 0, 0, 0.464);
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+
+    .home-menu-container{
+        background-color: rgba(0, 0, 0, 0.313);
+        width: 477px;
+        height: 600px;
+        margin-bottom: auto ;
+        position: absolute;
+        bottom: 37px;
+        border-radius: 6px;
+        /* display: none; */
+
+        .home-menu-top-bar{
+            background-color: rgba(127, 255, 212, 0.291);
+            height: 78px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .home-menu-mid-icons{
+            height: 471px;
+            background-color: rgba(0, 255, 255, 0.309);
+            border: solid 2px;
+        }
+        .home-menu-bottom-bar{
+            background-color: rgba(250, 235, 215, 0.182);
+            height: 52px;
+            /* background: linear-gradient(#245298,#3974db); */
+        }
+    }
+
+    .button{
+
+    }
+}
+
