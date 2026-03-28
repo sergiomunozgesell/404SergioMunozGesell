@@ -5,10 +5,11 @@
 
 // LÓGICA
 document.addEventListener('DOMContentLoaded', ()=>{
-
+    const loginAudio = new Audio("src/assets/tracks/Microsoft Windows XP sonido de inicio [99oiHGTUSac].webm")
     const loginPage = document.getElementById("loginPage")
     const loginContainer = document.getElementById("login-users-content");
     const loginAcces = document.getElementById('login-acces');
+    const loginAccesInfo = document.getElementById('username-settings')
 
     loginAcces.addEventListener('mouseover', (e)=>{
         loginContainer.classList.add("focus");
@@ -18,17 +19,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
     } )
 
     loginAcces.addEventListener('click', async ()=>{
-
+        loginAudio.play();
         loginContainer.classList.remove("focus");
         loginContainer.classList.add("clicked");
+        loginAccesInfo.style.display = "block";
+
         // Click y en un periodo de 4 segundos debe cerrar pestaña
         // Durante ese perido va reproducir el soundtrack de login de windows
         // Se añadirá estilos de clicked, que mantendrá el bockground gradiente y además se añadira un elemento p de setting configuration
         // Pasado los 4 segundos se añade el display none para quitar el elemento de la pantalla
         
-        setInterval(()=>{
+        setTimeout(()=>{
             loginPage.style.display="none"
-        },4000)
+        },4000);
         
         
     })

@@ -130,6 +130,7 @@ body {
                     }
 
                     .username-settings{
+                        display: none;
                         color: rgb(0, 0, 107);
                     }
                 }
