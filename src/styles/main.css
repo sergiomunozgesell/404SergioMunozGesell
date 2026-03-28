@@ -135,6 +135,12 @@ body {
                 }
 
             }
+            .login-mid-right-users.focus{
+                background-image: linear-gradient(to right, #133999, transparent);
+            }
+            .login-mid-right-users.clicked{
+                background-image: linear-gradient(to right, #133999, transparent);
+            }
 
         }
     }
