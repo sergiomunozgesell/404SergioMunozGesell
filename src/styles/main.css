@@ -35,13 +35,13 @@ body {
                 #007bff 70%,
                 transparent 100%);
         width: 100vw;
-        height: 151px;
+        height: 20vh;
     }
 
     .login-menu-mid {
         background-color: #007bff;
         width: 100vw;
-        height: 627px;
+        height: 60vh;
         display: flex;
 
         .login-menu-mid-left {
@@ -98,16 +98,10 @@ body {
                 margin-left: 60px;
                 width: 90%;
                 height: 100px;
-                
 
-
-                /* SETEAR ESTE COLOR CUANDO ESTE ONFOCUS LA IMAGEN LOGIN */
-                /* background-image: linear-gradient(to right, #133999, transparent); */
-                
-                
                 border-top-left-radius: 12px;
                 border-bottom-left-radius: 12px;
-                /* border: solid 1px transparent; */
+                
 
                 .login-user {
                     margin-left: 15px;
@@ -121,7 +115,7 @@ body {
                     width: auto;
                     height: 90px;
                     margin-left: 20px;
-                    
+
                     .username {
                         font-size: 20px;
                         font-weight: bolder;
@@ -129,27 +123,30 @@ body {
                         align-self: baseline;
                     }
 
-                    .username-settings{
+                    .username-settings {
                         display: none;
                         color: rgb(0, 0, 107);
                     }
                 }
 
             }
-            .login-mid-right-users.focus{
+
+            .login-mid-right-users.focus {
                 background-image: linear-gradient(to right, #133999, transparent);
             }
-            .login-mid-right-users.clicked{
+
+            .login-mid-right-users.clicked {
                 background-image: linear-gradient(to right, #133999, transparent);
             }
 
         }
+
     }
 
 
     .login-menu-bottom {
         width: 100vw;
-        height: auto;
+        height: 20vh;
         background-color: #002f9c09;
         border-top: 4px solid;
         border-image-slice: 1;
@@ -161,8 +158,54 @@ body {
                 #f59e0b 60%,
                 #1e3a8a 85%,
                 transparent 100%);
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+
+}
+
+.login-menu-botton-content-left{
+    width: 50%;
+    display: flex;
+    .content{
+        margin-left: 20px;
+        width: auto;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            
+        }
+
+        p{
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+        }
+
+    }
+
+}
+.login-menu-botton-content-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    p{
+        margin-top: 30px;
+        color: white;
+        font-size: 16px;
     }
 }
+
 
 .windowsxp {
     width: 100vw;
@@ -209,6 +252,8 @@ body {
             height: 52px;
             background: linear-gradient(#245298, #3974db);
         }
+
+
     }
 
     /* .button {} */

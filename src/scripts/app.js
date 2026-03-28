@@ -6,6 +6,7 @@
 // LÓGICA
 document.addEventListener('DOMContentLoaded', ()=>{
     const loginAudio = new Audio("src/assets/tracks/Microsoft Windows XP sonido de inicio [99oiHGTUSac].webm")
+    loginAudio.volume = 0.3;
     const loginPage = document.getElementById("loginPage")
     const loginContainer = document.getElementById("login-users-content");
     const loginAcces = document.getElementById('login-acces');
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         setTimeout(()=>{
             loginPage.style.display="none";
             loginAccesInfo.style.display = "none";
+            loginAudio.pause();
         },4000);
         
         
