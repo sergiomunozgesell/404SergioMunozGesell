@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         // Pasado los 4 segundos se añade el display none para quitar el elemento de la pantalla
         
         setTimeout(()=>{
-            loginPage.style.display="none"
+            loginPage.style.display="none";
+            loginAccesInfo.style.display = "none";
         },4000);
         
         
