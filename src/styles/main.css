@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
 
     /* REFERENCE */
     background-image: url("../assets/backgrounds/wallpaper-bliss-windowsxp.jpg");
@@ -14,12 +14,155 @@ body{
     background-size: cover;
 }
 
-.windowsxp{
+.announce {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    background-color: #245298;
+    flex-direction: column;
+
+
+    .login-menu-top {
+        background: #00309c;
+        border-bottom: solid 4px transparent;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right,
+                transparent 0%,
+                #007bff 30%,
+                #ffffff 50%,
+                #007bff 70%,
+                transparent 100%);
+        width: 100vw;
+        height: 151px;
+    }
+
+    .login-menu-mid {
+        background-color: #007bff;
+        width: 100vw;
+        height: 627px;
+        display: flex;
+
+        .login-menu-mid-left {
+            width: 50%;
+            border-right: 1px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to bottom,
+                    transparent 0%,
+                    rgba(166, 166, 166, 0.5) 30%,
+                    white 50%,
+                    rgb(166, 166, 166, 0.5) 75%,
+                    transparent 100%);
+
+            background-image: radial-gradient(circle at top left,
+                    rgba(255, 255, 255, 0.1) 0%,
+                    rgba(255, 255, 255, 0.2) 50%,
+                    transparent 70%);
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+
+            .login-mid-left-content {
+                display: flex;
+                flex-direction: column;
+
+                width: auto;
+                margin-right: 30px;
+
+                p {
+                    font-size: 30px;
+                    color: white;
+                }
+
+                img {
+                    margin-left: auto;
+                    width: 250px;
+
+                }
+            }
+
+
+        }
+
+        .login-menu-mid-right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+
+            .login-mid-right-users {
+                display: flex;
+                align-items: center;
+                margin-left: 60px;
+                width: 90%;
+                height: 100px;
+                
+
+
+                /* SETEAR ESTE COLOR CUANDO ESTE ONFOCUS LA IMAGEN LOGIN */
+                /* background-image: linear-gradient(to right, #133999, transparent); */
+                
+                
+                border-top-left-radius: 12px;
+                border-bottom-left-radius: 12px;
+                /* border: solid 1px transparent; */
+
+                .login-user {
+                    margin-left: 15px;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 8px;
+                    background-color: white;
+                }
+
+                .login-user-info {
+                    width: auto;
+                    height: 90px;
+                    margin-left: 20px;
+                    
+                    .username {
+                        font-size: 20px;
+                        font-weight: bolder;
+                        color: white;
+                        align-self: baseline;
+                    }
+
+                    .username-settings{
+                        color: rgb(0, 0, 107);
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    .login-menu-bottom {
+        width: 100vw;
+        height: auto;
+        background-color: #002f9c09;
+        border-top: 4px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right,
+                transparent 0%,
+                #1e3a8a 15%,
+                #f59e0b 40%,
+                #fef3c7 50%,
+                #f59e0b 60%,
+                #1e3a8a 85%,
+                transparent 100%);
+    }
+}
+
+.windowsxp {
     width: 100vw;
     height: 100vh;
 }
 
-.windowsxp-menu{
+.windowsxp-menu {
     width: 100vw;
     height: 37px;
     background-color: rgba(0, 0, 0, 0.464);
@@ -27,11 +170,11 @@ body{
     position: absolute;
     bottom: 0px;
 
-    .home-menu-container{
+    .home-menu-container {
         /* background-color: rgba(0, 0, 0, 0.313); */
         width: 477px;
         height: 606px;
-        margin-bottom: auto ;
+        margin-bottom: auto;
         position: absolute;
         bottom: 37px;
         border-top-left-radius: 6px;
@@ -39,28 +182,27 @@ body{
         border: solid #245298;
         /* display: none; */
 
-        .home-menu-top-bar{
+        .home-menu-top-bar {
             /* background-color: rgba(127, 255, 212, 0.291); */
             height: 80px;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
             border-top: 3px solid rgba(255, 255, 255, 0.579);
         }
-        .home-menu-mid-icons{
+
+        .home-menu-mid-icons {
             height: 471px;
             /* background-color: rgba(0, 255, 255, 0.309); */
             border: solid 2px #245298;
-            border-top: solid 3px #245298;        
+            border-top: solid 3px #245298;
         }
-        .home-menu-bottom-bar{
+
+        .home-menu-bottom-bar {
             /* background-color: rgba(250, 235, 215, 0.182); */
             height: 52px;
-            background: linear-gradient(#245298,#3974db);
+            background: linear-gradient(#245298, #3974db);
         }
     }
 
-    .button{
-
-    }
+    /* .button {} */
 }
-
